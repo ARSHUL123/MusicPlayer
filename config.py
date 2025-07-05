@@ -61,8 +61,8 @@ class Config:
     ADMIN = os.environ.get("ADMINS", '')
     ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in (ADMIN).split()]
     API_ID = int(os.environ.get("API_ID", "27198464"))
-    CHAT = int(os.environ.get("CHAT", ""))
-    LOG_GROUP=os.environ.get("LOG_GROUP", "")
+    CHAT = int(os.environ.get("CHAT", "6333237164"))
+    LOG_GROUP=os.environ.get("LOG_GROUP", "-4803487884")
     if LOG_GROUP:
         LOG_GROUP=int(LOG_GROUP)
     else:
