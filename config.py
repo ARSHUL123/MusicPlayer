@@ -60,7 +60,7 @@ else:
 class Config:
     ADMIN = os.environ.get("ADMINS", '')
     ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in (ADMIN).split()]
-    API_ID = int(os.environ.get("API_ID","27198464"))
+    API_ID = int(os.environ.get("API_ID", ''))
     CHAT = int(os.environ.get("CHAT", ""))
     LOG_GROUP=os.environ.get("LOG_GROUP", "")
     if LOG_GROUP:
@@ -84,8 +84,8 @@ class Config:
         EDIT_TITLE=None
     DURATION_LIMIT=int(os.environ.get("MAXIMUM_DURATION", 15))
     DELAY = int(os.environ.get("DELAY", 10))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")     
+    API_HASH = os.environ.get("API_HASH", "27198464")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "ee48c6b9ca05a9f95db7b78b2d268ea3")     
     SESSION = os.environ.get("SESSION_STRING", "")
     playlist=[]
     msg = {}
